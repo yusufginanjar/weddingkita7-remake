@@ -205,19 +205,23 @@
             </div>
         </div>
     </section>
-    <section class="flex justify-center">
+    <section class="flex justify-center mb-48">
         <div class="container ">
-            <h2 class="font-semibild text-3xl text-yellow-900">Ucapkan Sesuatu</h2>
-            <p>Berikan Ucapan & Doa Restu</p>
+            <h2 class="font-semibild text-3xl text-yellow-900 text-center my-12">Ucapkan Sesuatu</h2>
+            <p class="font-bold text-gray-500 text-center">Berikan Ucapan & Doa Restu</p>
             <p>*NB: Diharapkan tidak mencantumkan emoticon saat mengisi ucapan.</p>
             <form>
-                <div class="mb-6">
-                <input type="text" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" required="">
-                </div>
+
                 <div class="mb-6 w-100">
                     <textarea name="message" id="message" rows="3" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"></textarea>
                 </div>
-                <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Kirimkan Ucapan</button>
+                <select id="countries" class=" mb-4 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                <option selected="">Konfirmasi Kehadiran</option>
+                <option value="hadir">Hadir</option>
+                <option value="tidak-hadir">Tidak Hadir</option>
+                </select>
+
+                <but<button type="button" class="text-gray-900 bg-gradient-to-r from-red-200 via-red-300 to-yellow-200 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-red-100 dark:focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Kirim Ucapan</button>
             </form>
   
         </div>
